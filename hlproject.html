@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,50 @@
 </head>
 
 <body>
-<script>
+
+    <script>
+
+        const queryURL = "https://opentdb.com/api.php?amount=50&category=22&difficulty=hard&type=multiple";
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+
+            console.log(queryURL);
+
+            console.log(response);
+            // for (let index = 0; index < array.length; index++) {
+                getCountryFromList(response);
+            // }
+
+        });
 
 
-var queryURL = "https://opentdb.com/api.php?amount=15&category=22&difficulty=medium&type=multiple";
-$.ajax({
-      url: queryURL,
-      method: "GET"
-}).then (function(response) {
-    
-    console.log(queryURL);
 
-    console.log(response);
+        function getCountryFromList(triviaQuestions) {
+            let countryList = ['Saudi Arabia', 'Canada', 'United Kingdom','Angola',]
+            //console.log('show question 1 ', triviaQuestions.results[1].question)
+            //console.log(triviaQuestions.results[1].question.includes(countryList[2]))
+            for (let index = 0; index < triviaQuestions.results.length; index++) {
+                console.log (triviaQuestions.results[index].question);
+                console.log (triviaQuestions.results[index].correct_answer);
+                console.log (triviaQuestions.results[index].incorrect_answers);
+                //console.log(triviaQuestions.results[1].question.includes(countryList[index]));
+                if(triviaQuestions.results[0].question.includes(countryList[index]) === true){
+                //return countryList[index]; need to add all the array I sent to Rodrigo --> let CountryList
+            
+            }
+        }
+        }
 
-});
+        
+        /*var Questionnaire = { 
+        apiQuestion: [], 
+        correctAnswer: [ ], 
+        incorrectAnswer: {incorret_1: [], incorret_2: [], incorrect_3: []} 
+    };*/
 
     </script>
 </body>
+
 </html>
