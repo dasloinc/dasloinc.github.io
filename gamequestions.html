@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,8 +17,14 @@
 
 	<!-- CSS
 	 ================================================== -->
-	<link rel="stylesheet" href="mainpage.css">
-	<link rel="stylesheet" href="fonts.css">
+	<link href="http://fonts.googleapis.com/css?family=Arvo:400,700|" rel="stylesheet" type="text/css">
+	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+	<!-- CSS
+	 ================================================== -->
+	 <link rel="stylesheet" href="mainpage.css">
+	 <link rel="stylesheet" href="game.css">
 
 	<!-- Favicons
      ================================================== -->
@@ -34,6 +41,7 @@
 </head>
 
 <body>
+
 	<div id="site-content">
 		<header class="site-header">
 			<div class="primary-header">
@@ -59,99 +67,69 @@
 					<ul class="subscreen">
 						<li>
 							<div class="subscreen-caption">
-								<h2 class="subscreen-title">Welcome my new pupils! <br> Let's Play!!</h2>
-								<p> < .. Write something here .. /> </p>
-								<a href="gamequestions.html" class="button primary large">Test your Knowledge</a>
+								<h2 class="subscreen-title">Buckle Up!! It's time to have Fun.</h2>
+								<p> You will have 10 seconds to complete each question and be given the option to add your name to the highscore list at the end. Goodluck! </p>
 							</div>
-							<img src="./images/einstein-eureka.png" alt="">
+							<img src="./images/einstein-play.png" alt="">
 						</li>
-					</ul> 
+					</ul>
 				</div> 
 			</div> 
 		</header>
 	</div>
+	
+		<!-- <div id="highscore">
+	<a href="./highscore.html">View High Scores</a>  -->
+	
+	<!-- =================SMAK ADD ON ============================================================= -->
+	<!-- ============ Highscore Start Here ======================================================== -->
+	
+	<main class="main-content"> 
+	<div class="fullwidth-block">	
+	
+	<div class="main-content">
+				<!-- Timer -->
+		<div class="counter-wrap" data-date-target="">
+			<div class="counter seconds">
+				<div id="seconds" class="number">00</div>
+				<div class="caption">Seconds</div>
+			</div> 
+		</div> 
 
-	<main class="main-content">
-		<div class="fullwidth-block">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<h2 class="section-title"><i class="icon-yeah" style="border-radius: 50%; border:1px dotted #FFF"></i> Front-End News</h2>
-						<ul class="posts">
-							<li class="post">
-								<h3 class="entry-title"><a href="#">..Type something here..</a></h3>
-								<span class="date"><i class="icon-calendar"></i> XX MAY 2020</span>
-								<span class="location"><i class="icon-map-marker"></i>Class / Home</span>
-							</li>
-							<li class="post">
-								<h3 class="entry-title"><a href="#">..Type something here..</a></h3>
-								<span class="date"><i class="icon-calendar"></i> XX MAY 2020</span>
-								<span class="location"><i class="icon-map-marker"></i>Class / Home</span>
-							</li>
-							<li class="post">
-								<h3 class="entry-title"><a href="#">..Type something here..</a></h3>
-								<span class="date"><i class="icon-calendar"></i> XX MAY 2020</span>
-								<span class="location"><i class="icon-map-marker"></i>Class / Home</span>
-							</li>
-						</ul>
-						<p class="text-center">
-							<a href="#" class="more button secondary">See more News</a>
-						</p>
-					</div>
-					<div class="col-md-4">
-						<h2 class="section-title"><i class="icon-yeah" style="border-radius: 50%; border:1px dotted #FFF"></i> Back-End News</h2>
-						<ul class="posts">
-							<li class="post">
-								<h3 class="entry-title"><a href="#">..Type something here..</a></h3>
-								<span class="date"><i class="icon-calendar"></i> XX MAY 2020</span>
-								<span class="location"><i class="icon-map-marker"></i>Class / Home</span>
-							</li>
-							<li class="post">
-								<h3 class="entry-title"><a href="#">..Type something here..</a></h3>
-								<span class="date"><i class="icon-calendar"></i> XX MAY 2020</span>
-								<span class="location"><i class="icon-map-marker"></i>Class / Home</span>
-							</li>
-							<li class="post">
-								<h3 class="entry-title"><a href="#">..Type something here..</a></h3>
-								<span class="date"><i class="icon-calendar"></i> XX MAY 2020</span>
-								<span class="location"><i class="icon-map-marker"></i>Class / Home</span>
-							</li>
-						</ul>
-						<p class="text-center">
-							<a href="#" class="more button secondary">See more News</a>
-						</p>
-					</div>
-					<div class="col-md-4">
-						<h2 class="section-title"><i class="icon-wat" style="border-radius: 50%; border:1px dotted #FFF"></i> Never-End Curses</h2>
-						<ul class="posts">
-							<li class="post">
-								<h3 class="entry-title"><a href="#">The API's Nightmare</a></h3>
-								<span class="date"><i class="icon-calendar"></i> 29 FEB 2020</span>
-								<span class="time"><i class="icon-clock"></i>10:00am-2:00pm</span>
-								<span class="author"><i class="icon-user"></i>All Developers</span>
-							</li>
-							<li class="post">
-								<h3 class="entry-title"><a href="#">The API's Nightmare Returns</a></h3>
-								<span class="date"><i class="icon-calendar"></i> 3 MAY 2020</span>
-								<span class="time"><i class="icon-clock"></i>6:30pm-9:30pm</span>
-								<span class="author"><i class="icon-user"></i>Rodrigo Gimenes</span>
-							</li>
-							<li class="post">
-								<h3 class="entry-title"><a href="#">..Type another curse..</a></h3>
-								<span class="date"><i class="icon-calendar"></i> XX MAY 2020</span>
-								<span class="time"><i class="icon-clock"></i>00:00pm-00:00pm</span>
-								<span class="author"><i class="icon-user"></i>?? ??</span>
-							</li>
-						</ul>
-						<p class="text-center">
-							<a href="#" class="more button secondary">See more curses</a>
-						</p>
+	</div>
+
+	</div>
+	<div class="container">
+		<div id="topBanner"><a href="./highscore.html">View High Scores</a>
+
+			<div class="grid">
+				<div id="quiz">
+					<h1>Sample Question: In which city is the Big Nickel located in Canada?</h1>
+					<p id="question"></p>
+		 
+					<div class="buttons">
+						<button id="btn0">Calgary, Alberta<span id="choice0"></span></button>
+						<button id="btn1">Sudbury, Ontario<span id="choice0"></span></button>
+						<button id="btn2">Halifax, Nova Scotia<span id="choice2"></span></button>
+						<button id="btn3">Victoria, British Columbia<span id="choice3"></span></button>
+						<hr><p id="progress">Question x of y</p>
 					</div>
 				</div>
 			</div>
-		</div> 
-	</main>
+		</main>	
+	</hr>
+	
+	<div class="main-content">
+		<button type="submit" style="border: 0; background: transparent"><a href="##"></a>
+		<img src="./images/einstein-nextbutton.png" width="70" height="70" alt="submit">
+		</button>
+	</div>
 
+</div>
+	
+
+	<!-- ======================================== SMAK - ENDS HERE ===================================================== -->
+	
 	<footer class="site-footer">
 
 		<div id="footer" class="container">
@@ -173,7 +151,7 @@
 						<h3 class="widget-title">Social media</h3>
 						<p>Do you want help us to build more interesting games? Follow us</p>
 						<div class="social-links circle">
-							<a href="https://github.com/dasloinc/hlproject" target="_blank" ><i class="fa fa-github"></i></a>
+							<a href="https://github.com/dasloinc/hlproject" target="_blank"><i class="fa fa-github"></i></a>
 						</div>
 					</div>
 				</div>
@@ -240,7 +218,20 @@
 		</div>
 
 	</footer>
-		
+
+<script src="./questions.js"></script>
+<script src="./script.js"></script>	
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+

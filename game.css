@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Roboto');
+
+/* timer css */
+.counter-wrap {
+  float: right;
+  margin-right: 5%;
+}
+
+.counter-wrap .caption {
+	text-align: center;
+	/* text-transform: uppercase; */
+	/* color: #7d7482; */
+	color: black;
+	font-weight: 700;
+	/* font-size: 24px; */
+	font-size: 0.9em;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);  
+}
+
+.counter-wrap .number {
+	/* border-radius: 5px;
+	background-image: -webkit-linear-gradient(#4d4552, #3e3742);
+	background-image: linear-gradient(#4d4552, #3e3742);
+	border-top: 1px solid #817489; 
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);*/
+	border-bottom: 1px solid red; 
+	text-align: center;
+	/* font-size: 60px; */
+	font-size: 3.75em;
+	font-weight: 700;
+	/* padding: 5px 0; */
+  margin-bottom: 0px; 
+  color: red;
+  /* float: center; */
+}
+
+.container .questionbox{
+  width: 90%;
+  max-width: 600px;
+  padding: 100px;
+  margin:auto;
+  margin-top: 0px;
+  background-color: rgb(224, 228, 227);
+  border: 1px solid rgb(145, 142, 142);
+  border-radius: 10px;
+  float: center;
+}
+
+/* pain in the butt map */
+  .main-content {
+  /* *zoom: 0.5; */
+  /* position: relative; */
+  /* padding: 30px 0 40px; */
+  /* margin-bottom: 50px; */
+  /* background-color: #475d36; */
+  background-image: url("./images/map_green.png");
+  background-attachment: fixed;
+  /* background-position: bottom center; */
+  /* background-image: src="./images/map_green.png"; */
+  }
