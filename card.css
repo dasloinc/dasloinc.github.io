@@ -65,7 +65,8 @@
 .card_right h1 {
 	color:white;
 	/* color:#3c415e; */
-	font-family: 'Montserrat', sans-serif;
+	/* font-family: 'Montserrat', sans-serif; */
+	font-family: "Cabin Sketch", "Roboto Slab", georgia, serif;
 	font-weight:700;
 	text-align:center;
 	text-transform: uppercase;
