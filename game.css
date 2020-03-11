@@ -72,6 +72,16 @@
     margin-right: auto;
     width: 50%;
   }
+  #next-question-button {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+  #einstein-next-button :hover {
+    width: 115px;
+    height: 115px;
+    margin-top: -16px;
+  }
 
   #span-user-score {
 	  /* text-align: center;
@@ -100,6 +110,12 @@
     float: right;
     margin-right: 720px;
     margin-top: -5px;
+  }
+  input[type='image']:hover {
+    width: 60px;
+    height: 60px;
+    margin-right: 718px;
+    margin-top: -8px;
   }
   @media (max-width: 1199px) {
     input[type='image'] {
