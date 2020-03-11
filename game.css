@@ -3,18 +3,24 @@
 /* timer css */
 .counter-wrap {
   float: right;
-  margin-right: 5%;
+  margin-right: 10%;
+}
+@media (max-width: 1199px) {
+  .counter-wrap {
+    margin-right: 0;
+  }
 }
 
 .counter-wrap .caption {
 	text-align: center;
-	/* text-transform: uppercase; */
+	text-transform: uppercase;
 	/* color: #7d7482; */
-	color: black;
+	color: red;
 	font-weight: 700;
 	/* font-size: 24px; */
-	font-size: 0.9em;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);  
+	font-size: 1.4em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);  
+  font-family: "Cabin Sketch", "Roboto Slab", georgia, serif;
 }
 
 .counter-wrap .number {
@@ -31,6 +37,7 @@
 	/* padding: 5px 0; */
   margin-bottom: 0px; 
   color: red;
+  font-family: "Cabin Sketch", "Roboto Slab", georgia, serif;
   /* float: center; */
 }
 
@@ -57,4 +64,11 @@
   background-attachment: fixed;
   /* background-position: bottom center; */
   /* background-image: src="./images/map_green.png"; */
+  }
+
+  #einstein-next-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
