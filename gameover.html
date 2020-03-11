@@ -23,6 +23,7 @@
 	 ================================================== -->
 	 <link rel="stylesheet" href="mainpage.css">
 	 <link rel="stylesheet" href="game.css">
+	 <link rel="stylesheet" href="fonts.css">
 
 	<!-- Favicons
      ================================================== -->
@@ -65,11 +66,10 @@
 					<ul class="subscreen">
 						<li>
 							<div class="subscreen-caption">
-								<h2 class="subscreen-title">Buckle Up!! It's time to have Fun.</h2>
-								<!-- Rules Here -->
-								<p> You will have 10 seconds to complete each question and be given the option to add your name to the highscore list at the end. Goodluck! </p>
+								<h2 class="subscreen-title">That's all folks!! <br>Thanks for playing.</h2>
+								<p> You've completed our quiz with a score of <span id="span-user-score">15</span>. <br>Would you like to post this to our highscore list? </p>
 							</div>
-							<img src="./images/einstein-play.png" alt="">
+							<img src="./images/einstein-learn.png" alt="">
 						</li>
 					</ul>
 				</div> 
@@ -77,15 +77,8 @@
 		</header>
 	</div>
 
-	<main class="main-content"> s
-		<!-- Timer -->
-		<div class="counter-wrap" data-date-target="">
-			<div class="counter seconds">
-				<div id="seconds" class="number">00</div>
-				<div class="caption">Seconds</div>
-			</div> 
-		</div> 
-
+	<main class="main-content"> 
+	
 		<div class="fullwidth-block">
 			<div class="container">
 				<div class="row">
@@ -95,15 +88,16 @@
 
 						<!-- Completion of following line depends on how question script is written -->
 
-						<p>You've completed our quiz with a score of "". Would you like to post this to our highscore list?</p>
+						<!-- <p>You've completed our quiz with a score of "". Would you like to post this to our highscore list?</p> -->
 
 						<!-- set form action to high score page below -->
 						<form>
 
-							<label for="fname">Enter Name Here: </label><br>
-							<input type="text" id="fname">
+							<!-- <label for="fname">Enter Name Here: </label><br> -->
+							<input type="text" id="fname" value="Enter Name Here: ">
 							<!-- <input type="submit" value="Submit to Highscore">   -->
-							<button id="loadhighscore">Submit to Highscore</button>
+							<!-- <button id="loadhighscore">Submit to Highscore</button> -->
+							<input type="image" id="einstein-submit-highscore" alt="Submit Highscore" src="./images/einstein-champion.png" value="Submit Highscore">
 
 						</form>
 

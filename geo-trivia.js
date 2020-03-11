@@ -96,13 +96,34 @@ $( document ).ready( function() {
         }
     }
 
-    function getCountriesFromObject ( inputCorrectAnswer ) {
-        if ( inputCorrectAnswer in triviaCorrectAnswers ){
-            return triviaCorrectAnswers[ inputCorrectAnswer ];
+    function getUserAnswer() {
+        // event.preventDefault() prevents submit button from trying to send a form.
+        // Using a submit button instead of a regular button allows the user to hit
+        // "Enter" instead of clicking the button if desired
+        event.preventDefault();
+
+        // Grab indicator from localStorage
+        var isAnswerCorrect = localStorage.getItem( "verifyCorrectAnswer" );
+
+        if ( isAnswerCorrect === 1 ) {
+            // Grab the correct answer from localStorage
+            var localStorageInput = localStorage.getItem( "correctInput" );
+
+            if ( localStorageInput in triviaCorrectAnswers ){
+                getResponseRestCountriesAPI ( getCountriesFromObject ( localStorageInput ), 0 );
+            }
+            else {
+                createCardIncorrectAnswer( isAnswerCorrect );
+            }
         }
+        //Incorrect Answer
         else {
-            alert ( "Can't find your country: " + triviaCorrectAnswers[ inputCorrectAnswer ] );
+            createCardIncorrectAnswer( isAnswerCorrect );
         }
+    }
+
+    function getCountriesFromObject ( inputCorrectAnswer ) {
+            return triviaCorrectAnswers[ inputCorrectAnswer ];
     }
 
     function getResponseRestCountriesAPI ( countryFromAnswer, indexFromAnswer ) {
@@ -132,12 +153,12 @@ $( document ).ready( function() {
             url: queryURL,
             type: "GET",
             success: function(response) {
-                createNewRow( geoCodeObj, indexObj, response, moreCountries, indexFromAnswer, geoCodeArr.length );
+                createCardCorrectAnswer( geoCodeObj, indexObj, response, moreCountries, indexFromAnswer, geoCodeArr.length );
             }
         });
     }
 
-    function createNewRow(objGeoCode, objIndex, responseAjax, boolMoreCountries, iPage, maxPage) {
+    function createCardCorrectAnswer(objGeoCode, objIndex, responseAjax, boolMoreCountries, iPage, maxPage) {
         // Clear all information on Card
         emptyCardLayout();
 
@@ -196,6 +217,17 @@ $( document ).ready( function() {
 
             cardRight.append( xtraRightButton_1 );
         }
+    }
+
+    function createCardIncorrectAnswer() {
+        // Clear all information on Card
+        emptyCardLayout();
+
+        let h1Right = $( "<h1>" ).attr( "class", "answerStatus" ).text( ( isAnswerCorrect === 1 ) ? "Oops... I don't believe that's the right answer!!" : "Oops... I couldn't find your answer in my database, that's embarrassing!" );
+        
+        $( ".card_left" ).append( $( "<img>").attr( "src", "./images/einstein-charts.png" ).attr( "alt", "Einstein Oops" ) );
+
+        $( ".card_right" ).append( h1Right );
     }
 
     function emptyCardLayout() {

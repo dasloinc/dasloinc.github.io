@@ -7,11 +7,6 @@
 @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
 
 
-/* #home {
-	background:#e2e2e2;
-	width:98%;
-	height:100vh;
-} */
 .card {
 	width:800px;
 	height:338px;
@@ -33,18 +28,13 @@
 	height:338px;
 	float:left;
 	overflow:hidden;
-	/* background:transparent; */
-	background: #000000;
+	background:#D3DBD6;
 	border-radius:10px 0 0 10px;
 	align-items: center;
 	-webkit-border-radius:10px 0 0 10px;
 	-moz-border-radius:10px 0 0 10px;
 }
 .card_left img {
-	/* width:100%;
-	height:100%;
-	align-items: center;
-	position:relative; */
 	width: 100%;
     height: auto;
     max-width: none;
@@ -55,17 +45,15 @@
 .card_right {
 	width:55%;
 	float:left;
-	/* background:#eeeeee; 454d66*/
-	background:#000000;
+	background:#D3DBD6;
 	height:338px;
 	border-radius:0 10px 10px 0;
 	-webkit-border-radius:0 10px 10px 0;
     -moz-border-radius:0 10px 10px 0;
 }
 .card_right h1 {
-	color:white;
-	/* color:#3c415e; */
-	font-family: 'Montserrat', sans-serif;
+	color:#37432B;
+	font-family: "Cabin Sketch", "Roboto Slab", georgia, serif;
 	font-weight:700;
 	text-align:center;
 	text-transform: uppercase;
@@ -75,8 +63,7 @@
 	letter-spacing:1px;
 }
 .card_right h2 {
-	color:white;
-	/* color:#454d66; */
+	color: #35495E;
 	font-family: 'Montserrat', sans-serif;
 	font-weight:400;
 	text-align:left;
@@ -85,6 +72,7 @@
 	margin:30px 0 0 0;
 	padding:0 0 0 40px;
 	letter-spacing:1px;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
 }
 
 .card_right__details ul {
@@ -93,50 +81,31 @@
 	margin:10px 0 0 0;
 }
 .card_right__details ul li {
-	/* display:inline; */
 	display: block;
-	color:#e3e3e3;
-	/* color:#454d66; */
+	color: #35495E;
 	font-family: 'Montserrat', sans-serif;
 	font-weight:400;
 	font-size:14px;
 	padding:0 40px 0 0;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
 }
-				
-/* .card_right__review p {
-	color:white;
-	font-family: 'Montserrat', sans-serif;
-	font-size:12px;
-	padding:0 40px 0 40px;
-	letter-spacing:1px;
-	margin:10px 0 10px 0;
-	line-height:20px;
-} */
-/* .card_right__review a {
-	text-decoration:none;
-	font-family: 'Montserrat', sans-serif;
-	font-size:14px;
-	padding:0 0 0 40px;
-	color:#0BE2B8;
-	margin:0;
-} */
 	
 .card_right__button {
 	padding:0 0 0 40px;
 	margin:30px 0 0 0;
 }
 .card_right__button a {
-	/* color:#05917D; */
 	color:#FFF;
 	text-decoration:none;
 	font-family: 'Montserrat', sans-serif;
 	border:2px solid #0BE2B8;
 	padding:10px 10px 10px 40px;
 	font-size:12px;
-	background:url(./icons/location-green.png);
+	background:url(./location-green.png);
 	background-size:10px 15px;
 	background-repeat:no-repeat;
 	background-position: 13% 50%;
+	background-color: #35495E;
 	border-radius:5px;
 	-webkit-transition-property: all;
 	transition-property: all;
@@ -146,7 +115,7 @@
 .card_right__button a:hover {
 	color: #000000;
 	background-color: #0BE2B8;
-	background-image:url(./icons/location-yellow.png);
+	background-image:url(./location-yellow.png);
 	background-size:18px 25px;
 	background-repeat:no-repeat;
 	background-position: 10% 50%;
@@ -157,13 +126,6 @@
 	transition-duration: .5s;
 }
 
-
-
-
-
-
-
-
 .button-wrapper {
     width: 95px;
     height: 100%;
@@ -173,7 +135,6 @@
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-	/* display: flex; */
 	display: block;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -198,7 +159,6 @@
     cursor: pointer;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);
     z-index: 99;
-    /* position: relative; */
     background: #4ecdc0;
     -webkit-align-self: flex-end;
     -ms-flex-item-align: end;

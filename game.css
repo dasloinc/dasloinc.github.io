@@ -3,18 +3,24 @@
 /* timer css */
 .counter-wrap {
   float: right;
-  margin-right: 5%;
+  margin-right: 10%;
+}
+@media (max-width: 1199px) {
+  .counter-wrap {
+    margin-right: 0;
+  }
 }
 
 .counter-wrap .caption {
 	text-align: center;
-	/* text-transform: uppercase; */
+	text-transform: uppercase;
 	/* color: #7d7482; */
-	color: black;
+	color: red;
 	font-weight: 700;
 	/* font-size: 24px; */
-	font-size: 0.9em;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);  
+	font-size: 1.4em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);  
+  font-family: "Cabin Sketch", "Roboto Slab", georgia, serif;
 }
 
 .counter-wrap .number {
@@ -31,6 +37,7 @@
 	/* padding: 5px 0; */
   margin-bottom: 0px; 
   color: red;
+  font-family: "Cabin Sketch", "Roboto Slab", georgia, serif;
   /* float: center; */
 }
 
@@ -57,4 +64,61 @@
   background-attachment: fixed;
   /* background-position: bottom center; */
   /* background-image: src="./images/map_green.png"; */
+  }
+
+  #einstein-next-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  #next-question-button {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+  #einstein-next-button :hover {
+    width: 115px;
+    height: 115px;
+    margin-top: -16px;
+  }
+
+  #span-user-score {
+	  /* text-align: center;
+	  font-size: 3.75em;
+	  font-weight: 700;
+    margin-bottom: 0px; 
+    color: red;
+    font-family: "Cabin Sketch", "Roboto Slab", georgia, serif; */
+
+    color:#481380;
+	  font-family: "Cabin Sketch", "Roboto Slab", georgia, serif;
+	  font-weight:700;
+	  text-align:center;
+	  font-size:40px;
+	  margin:3px 0 0 0;
+	  padding:0 0 0 15px;
+	  letter-spacing:1px;
+  }
+
+  input[type='image'] {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+    margin-right: 720px;
+    margin-top: -5px;
+  }
+  input[type='image']:hover {
+    width: 60px;
+    height: 60px;
+    margin-right: 718px;
+    margin-top: -8px;
+  }
+  @media (max-width: 1199px) {
+    input[type='image'] {
+      margin-right: 540px;
+    }
   }
