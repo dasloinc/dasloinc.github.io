@@ -1,0 +1,33 @@
+/*
+=====================================================================
+*   v1.0 Layout Stylesheet
+===================================================================== 
+*/
+@font-face {
+    font-family: "Cabin Sketch";
+    src: url("./fonts/cabinsketch-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Cabin Sketch";
+    src: url("./fonts/cabinsketch-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+
+
+}
+/*
+=====================================================================
+*   Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+*  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+===================================================================== 
+*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/*
+===================================================================== 
+*   Google Font
+=====================================================================  
+*/
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap');

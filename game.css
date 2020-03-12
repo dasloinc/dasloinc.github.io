@@ -43,7 +43,7 @@
 
 .container .questionbox{
   width: 90%;
-  max-width: 600px;
+  max-width: 400px;
   padding: 100px;
   margin:auto;
   margin-top: 0px;
@@ -51,6 +51,7 @@
   border: 1px solid rgb(145, 142, 142);
   border-radius: 10px;
   float: center;
+
 }
 
 /* pain in the butt map */
@@ -70,17 +71,44 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 94px;
+  
   }
+
+  #einstein-previous-button,
+  clear-button {
+    background-color: rgb(212, 219, 214);
+    display: block;
+    margin-left:0;
+    /* margin-right: auto; */
+    width:75px;
+    opacity:0.75;
+
+  
+  }
+  #resetbutton,
+  clear-button {
+    background-color: rgb(119, 124, 121);
+    display: block;
+    margin-right:0;
+    /* margin-right: auto; */
+    width:75px;
+    opacity:0.75;
+    float: right
+
+  
+  }
+
   #next-question-button {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     margin-bottom: 20px;
+    margin-left: 130px;
   }
-  #einstein-next-button :hover {
+  /* #einstein-next-button :hover {
     width: 115px;
     height: 115px;
-    margin-top: -16px;
+    margin-top: -16px; */
   }
 
   #span-user-score {
@@ -121,4 +149,55 @@
     input[type='image'] {
       margin-right: 540px;
     }
+ 
+/* added by smak  - highscore container*/
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+  li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+ 
+  body {
+    font-family: "Cabin Sketch", "Roboto Slab", georgia, serif;
+    font-size: 15px;
+    margin: 0;
+    color: #b0b3b6;
   }
+ 
+  font.header{
+    font-size: 48px;
+    font-size: 3rem;
+    color: white;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    font-family: 'Cabin Sketch', cursive;
+
+  }
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  /* =========== Main Question Box ==============*/
+  
+  .grid {
+      width: 300px;
+      height: 400px;
+      max-height:900px;
+      padding: 10px 20px 50px 50px;
+      margin:auto;
+      margin-top: 10px;
+      background-color: rgb(212, 219, 214);
+      opacity:1.0;
+      border: 1px solid rgb(197, 193, 193);
+      border-radius: 10px;
+      margin-left: 50px;
+      color:rgb(134, 134, 129);
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

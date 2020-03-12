@@ -1,6 +1,6 @@
 body {
   color: #8f9b86;
-  font-family: "Arvo", "Roboto Slab", "Open Sans", sans-serif;
+  font-family: "Cabin Sketch", "Roboto Slab", georgia, serif;
   font-size: 16px;
   line-height: 2;
   font-weight: 300;
@@ -994,9 +994,11 @@ body {
 }
 
 /* =========== Main Question Box ==============*/
+
 .grid {
-    width: 90%;
+    width: 70%;
     height: 400px;
+    max-height:900px;
     padding: 10px 20px 50px 50px;
     margin:auto;
     margin-top: 10px;
@@ -1012,11 +1014,11 @@ body {
 }
 
 .grid h1 {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Cabin Sketch", "Roboto Slab", "georgia", "serif";
   /* background-color: #8f9b86; */
   font-size: 20px;
   text-align: center;
-  color:black;
+  color: rgb(134, 134, 129);
   padding: 2px 100px;    /*box and question position */
 }
 
@@ -1027,7 +1029,7 @@ body {
 }
 
 .grid #question {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Cabin Sketch", "Roboto Slab", "georgia", "serif";
   font-size: 30px;
   color: rgb(76, 79, 80);
 }
@@ -1038,13 +1040,14 @@ body {
 /* 
 === Question Choice box  ==============  */
 #btn0, #btn1, #btn2, #btn3 {
-  background-color: rgb(87, 110, 82);
+  background-color: rgb(98, 116, 94);
   width: 400px;
   font-size: 20px;
   color: #fff;
   border: 1px solid rgb(243, 247, 252);
   margin: 10px 40px 10px 0px;
   padding: 10px 100px;
+  
 }
 
 #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
@@ -1071,8 +1074,8 @@ body {
 }
 
 #topBanner a {
-  color:#481380;
-	font-family: "Cabin Sketch", "Roboto Slab", georgia, serif;
+  color:#67567e;
+	font-family: "Cabin Sketch", "Roboto Slab", "georgia", "serif";
 	font-weight:700;
 	text-align:center;
 	text-transform: uppercase;
