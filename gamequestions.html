@@ -25,7 +25,7 @@
 	 ================================================== -->
 	 <link rel="stylesheet" href="mainpage.css">
 	 <link rel="stylesheet" href="game.css">
-	 <link rel="stylesheet" href="fonts.css">
+	 <link rel="stylesheet" href="/fonts/fonts.css">
 
 	<!-- Favicons
      ================================================== -->
@@ -62,25 +62,50 @@
 					<div class="mobile-navigation"></div>
 				</div> 
 			</div> 
+			<div class="secondary-header">
+				<div class="container">
+					<ul class="subscreen">
+						<li>
+							<img src="./images/einstein-play.png" alt="einstein-choices" style="height: 350px; width: 450px;">
+							
+							<div class="subscreen-caption">
+
+						<div class= "font.header"> 
+						<h2 class="subscreen-title">Buckle Up!! It's time to have Fun.</h2>
+						
+						<p> You will have 10 seconds to complete each question and be given the option to add your name to the highscore list at the end. Goodluck! </p>
+					</div>
+			
+					</li>
+					</ul>
+
+				</div> 
+			</div> 
+		</header>
+	</div>
+
+
+			<!-- --------
 
 			<div class="secondary-header">
 				<div class="container">
 					<ul class="subscreen">
 						<li>
+							<img src="./images/einstein-choices.png" alt="einstein-choices" style="height: 350px; width: 450px;">
+							
 							<div class="subscreen-caption">
-								<h2 class="subscreen-title">Buckle Up!! It's time to have Fun.</h2>
-								<p> You will have 10 seconds to complete each question and be given the option to add your name to the highscore list at the end. Goodluck! </p>
-							</div>
-							<img src="./images/einstein-play.png" alt="">
-						</li>
+
+						<div class= "font.header"> 
+						<h2 class="subscreen-title">HIGHSCORE!!</h2>
+						<!-- <h2 class="subscreen-title"></h2>Welcome my new pupils! <br> Let's Play!!</br></h2></div> -->
+						<!-- <p> Thank you for taking our quiz! Take a look at how your score stacks against others~! :) </p>
+					</div>
+		
+					</li>
 					</ul>
+
 				</div> 
-			</div> 
-		</header>
-	</div>
-	
-		<!-- <div id="highscore">
-	<a href="./highscore.html">View High Scores</a>  -->
+			</div>  --> -->
 	
 	<!-- =================SMAK ADD ON ============================================================= -->
 	<!-- ============ Highscore Start Here ======================================================== -->
@@ -113,7 +138,15 @@
 						<button id="btn1">Sudbury, Ontario<span id="choice0"></span></button>
 						<button id="btn2">Halifax, Nova Scotia<span id="choice2"></span></button>
 						<button id="btn3">Victoria, British Columbia<span id="choice3"></span></button>
-						<hr><p id="progress">Question x of y</p>
+						<hr>
+					<!-- Country facts will appear only when the answer is correct -->
+						<div class="card">  ******* Additional information about the country will be placed here if response is correct! If response is incorrect, Correct answer will be displayed.******
+							<div class="card_left"></div>
+							<div class="card_right"></div>
+						</div>
+
+					
+
 					</div>
 				</div>
 			</div>
@@ -123,11 +156,12 @@
 	<div class="main-content">
 		<button id="einstein-next-button" type="submit" style="border: 0; background: transparent"><a href="##"></a>
 		<img id="next-question-button" src="./images/einstein-nextbutton.png" alt="submit">
+
 		</button>
 	</div>
 
 </div>
-	
+
 
 	<!-- ======================================== SMAK - ENDS HERE ===================================================== -->
 	
@@ -221,7 +255,7 @@
 	</footer>
 
 <script src="./questions.js"></script>
-<script src="./script.js"></script>	
+<!-- <script src="./script.js"></script>	 -->
 </body>
 
 </html>
