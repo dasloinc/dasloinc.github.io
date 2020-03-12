@@ -111,6 +111,29 @@
     margin-top: -16px; */
   }
 
+  #einstein-previous-button,
+  clear-button {
+    background-color: rgb(212, 219, 214);
+    display: block;
+    margin-left:0;
+    /* margin-right: auto; */
+    width:75px;
+    opacity:0.75;
+
+  
+  }
+  #resetbutton,
+  clear-button {
+    background-color: rgb(119, 124, 121);
+    display: block;
+    margin-right:0;
+    /* margin-right: auto; */
+    width:75px;
+    opacity:0.75;
+    float: right
+
+  
+
   #span-user-score {
 	  /* text-align: center;
 	  font-size: 3.75em;
