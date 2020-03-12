@@ -75,17 +75,29 @@
   
   }
 
-  #einstein-previous-button,
-  clear-button {
+  #einstein-previous-button{
+  clear-button 
     background-color: rgb(212, 219, 214);
     display: block;
-    margin-left:0;
+    margin-left: 0;
     /* margin-right: auto; */
-    width:75px;
-    opacity:0.75;
-
-  
+    width: 75px;
+    opacity: 0.75;
   }
+
+#einstein-gameover{
+  margin: 10px;
+  padding: 0px;
+  vertical-align: bottom;
+  margin-bottom: -5px;
+  margin-left: 20px;
+  border-radius: 50%;
+  background-color:rgb(212, 219, 214);
+  height:70px;
+  width: 70px;
+
+  }
+
   #resetbutton,
   clear-button {
     background-color: rgb(119, 124, 121);
@@ -102,8 +114,8 @@
   #next-question-button {
     width: 70px;
     height: 70px;
-    margin-bottom: 20px;
-    margin-left: 130px;
+    margin-bottom: 0px;
+    margin-left: 0px;
   }
   /* #einstein-next-button :hover {
     width: 115px;
@@ -155,12 +167,14 @@
   input[type='image'] {
     width: 50px;
     height: 50px;
-    padding: 0;
+    padding: 0px;
     border-radius: 50%;
     cursor: pointer;
     float: right;
     margin-right: 720px;
     margin-top: -5px;
+    background: red;
+
   }
   input[type='image']:hover {
     width: 60px;
