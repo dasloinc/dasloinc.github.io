@@ -14,31 +14,21 @@
 .counter-wrap .caption {
 	text-align: center;
 	text-transform: uppercase;
-	/* color: #7d7482; */
 	color: red;
 	font-weight: 700;
-	/* font-size: 24px; */
 	font-size: 1.4em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);  
   font-family: "Cabin Sketch", "Roboto Slab", georgia, serif;
 }
 
 .counter-wrap .number {
-	/* border-radius: 5px;
-	background-image: -webkit-linear-gradient(#4d4552, #3e3742);
-	background-image: linear-gradient(#4d4552, #3e3742);
-	border-top: 1px solid #817489; 
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);*/
 	border-bottom: 1px solid red; 
 	text-align: center;
-	/* font-size: 60px; */
 	font-size: 3.75em;
 	font-weight: 700;
-	/* padding: 5px 0; */
   margin-bottom: 0px; 
   color: red;
   font-family: "Cabin Sketch", "Roboto Slab", georgia, serif;
-  /* float: center; */
 }
 
 .container .questionbox{
@@ -56,15 +46,17 @@
 
 /* pain in the butt map */
   .main-content {
-  /* *zoom: 0.5; */
-  /* position: relative; */
-  /* padding: 30px 0 40px; */
-  /* margin-bottom: 50px; */
-  /* background-color: #475d36; */
   background-image: url("./images/map_green.png");
   background-attachment: fixed;
-  /* background-position: bottom center; */
-  /* background-image: src="./images/map_green.png"; */
+  }
+
+  #einstein-start-game {
+    width: 700px;
+    height: 300px;
+    margin-left: 110px;
+    border: none;
+    background: url(./images/einstein-cloud.png); 
+    background-size: 700px 300px;
   }
 
   #einstein-next-button {
@@ -72,7 +64,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 94px;
-  
+    cursor: pointer;
   }
 
   #einstein-previous-button,
@@ -80,43 +72,37 @@
     background-color: rgb(212, 219, 214);
     display: block;
     margin-left:0;
-    /* margin-right: auto; */
     width:75px;
     opacity:0.75;
-
-  
   }
+
   #resetbutton,
   clear-button {
     background-color: rgb(119, 124, 121);
     display: block;
     margin-right:0;
-    /* margin-right: auto; */
     width:75px;
     opacity:0.75;
-    float: right
-
-  
+    float: right;
   }
 
   #next-question-button {
     width: 70px;
     height: 70px;
     margin-bottom: 20px;
-    margin-left: 130px;
+    /* margin-left: 130px; */
   }
   /* #einstein-next-button :hover {
     width: 115px;
     height: 115px;
-    margin-top: -16px; */
-  }
+    margin-top: -16px; 
+  }*/
 
   #einstein-previous-button,
   clear-button {
     background-color: rgb(212, 219, 214);
     display: block;
     margin-left:0;
-    /* margin-right: auto; */
     width:75px;
     opacity:0.75;
 
@@ -127,21 +113,12 @@
     background-color: rgb(119, 124, 121);
     display: block;
     margin-right:0;
-    /* margin-right: auto; */
     width:75px;
     opacity:0.75;
-    float: right
-
-  
+    float: right;
+  }
 
   #span-user-score {
-	  /* text-align: center;
-	  font-size: 3.75em;
-	  font-weight: 700;
-    margin-bottom: 0px; 
-    color: red;
-    font-family: "Cabin Sketch", "Roboto Slab", georgia, serif; */
-
     color:#481380;
 	  font-family: "Cabin Sketch", "Roboto Slab", georgia, serif;
 	  font-weight:700;
@@ -172,6 +149,7 @@
     input[type='image'] {
       margin-right: 540px;
     }
+  }
  
 /* added by smak  - highscore container*/
 ol {
@@ -186,6 +164,7 @@ ol {
   li {
     display: list-item;
     text-align: -webkit-match-parent;
+  }
  
   body {
     font-family: "Cabin Sketch", "Roboto Slab", georgia, serif;
@@ -210,17 +189,18 @@ ol {
   /* =========== Main Question Box ==============*/
   
   .grid {
-      width: 300px;
-      height: 400px;
-      max-height:900px;
-      padding: 10px 20px 50px 50px;
-      margin:auto;
-      margin-top: 10px;
-      background-color: rgb(212, 219, 214);
-      opacity:1.0;
-      border: 1px solid rgb(197, 193, 193);
-      border-radius: 10px;
-      margin-left: 50px;
-      color:rgb(134, 134, 129);
-      font-family: 'Yanone Kaffeesatz', sans-serif;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 950px;
+    height: 400px;
+    max-height: 900px;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 5px;
+    /* margin-top: 10px; */
+    background-color: rgb(212, 219, 214);
+    opacity:1.0;
+    border: 1px solid rgb(197, 193, 193);
+    border-radius: 10px;
+    /* margin-left: 50px; */
+    color:rgb(134, 134, 129);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
