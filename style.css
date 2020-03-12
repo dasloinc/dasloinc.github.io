@@ -1,10 +1,11 @@
 body{
     color: green;
+    padding: 2rem;
 }
 
 .container{
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,4 +30,28 @@ body{
 
 .choice-text{
     padding: 1.5rem;
+    width: 100%;
+}
+
+#qc{
+    display: flex;
+    justify-content: space-around;
+}
+
+.qc-prefix{
+    text-align: center;
+}
+
+button{
+    width: 10rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/*end page*/
+form{
+width: 100%;
+display:flex;
+flex-direction: column;
+align-items: center;
 }

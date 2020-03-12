@@ -57,6 +57,7 @@ $( document ).ready(function() {
 
         if (availableQuestions.length === 0 || questionCounter > max_questions){
         //go to the last page
+        localStorage.setItem('mostRecentScore', score);
             //return window.location.assign('to a spesific page we chooose')
         }
         questionCounter++;
@@ -93,12 +94,3 @@ $( document ).ready(function() {
             });
         })
     });
-        /*const queryURL = "https://opentdb.com/api.php?amount=2&category=22&difficulty=hard&type=multiple";
-        var results;
-        $.ajax({
-            url: queryURL,
-            method: "GET"
-        }).then(function (response) {
-            console.log(queryURL);
-            console.log(response);
-        });*/

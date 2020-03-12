@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>end Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="localstorage.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class ="container">
+        <div id ="end">
+            <h1 id ="finalScore">0</h1>
+                    <div id="qc">
+                        <div id="qc-item">
+                            <p class="qc-prefix">
+                                Question
+                            </p>
+                            <h1 class="qc-main-text" id="questionCounter">
+            
+                            </h1>
+                        </div>
+                        <div id="qc-item">
+                            <p class="qc-prefix">
+                                Score
+                            </p>
+                            <h1 class="qc-main-text" id="score">
+                                
+                            </h1>
+                        </div>
+                    </div>
+            <form>
+                <input 
+                type ="text"
+                name ="username"
+                id ="username"
+                placeholder="username">
+                <button 
+                    type ="submit" 
+                    class ="btn" 
+                    id ="saveScoreBtn"
+                    onclick="saveHighScore(event)">
+                    save
+                </button>
+                <a class ="btn" href =/hlproject.html>Play again</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
