@@ -26,6 +26,8 @@
 	 <link rel="stylesheet" href="mainpage.css">
 	 <link rel="stylesheet" href="game.css">
 	 <link rel="stylesheet" href="./fonts/fonts.css">
+	 <link rel="stylesheet" href="card.css">
+
 
 	<!-- Favicons
      ================================================== -->
@@ -37,7 +39,7 @@
 
 	<!-- Javascript
      ================================================== -->
-	<!-- <script type="text/javascript" src="js/script.js"></!-->
+	<script src="./questions.js"></script>
 
 </head>
 
@@ -101,7 +103,7 @@
 
 		<div class="container">
 			<div id="topBanner">
-				<a href="./highscore.html">View Highscore</a>
+				<a id="a-highscore" href="./highscore.html">View Highscore</a>
 
 				<div class="grid">
 					<div id="quiz">
@@ -118,6 +120,11 @@
 							<button id="btn3">Victoria, British Columbia<span id="choice3"></span></button>
 							<hr>
 							<p id="progress">Question x of y</p>
+
+							<div class="card">
+								<div class="card_left"></div>
+								<div class="card_right"></div>
+							</div>
 							Correct answer  =  Display Facts of country 
 							<br>
 							Incorrect answer = Display correct Answer
@@ -130,9 +137,9 @@
 	</main>	
 	
 	<div class="main-content" id="einstein-next-question-button">
-		<!-- <button id="einstein-next-button" type="submit" style="border: 0; background: transparent"><a href="highscore.html">
+		<!-- <button id="einstein-next-button" type="submit" style="border: 0; background: transparent">
 		<img id="next-question-button" src="./images/einstein-nextbutton.png" alt="submit">
-		</button></a> -->
+		</button> -->
 	</div>
 
 </div>
@@ -229,8 +236,6 @@
 
 	</footer>
 
-<script src="./questions.js"></script>
-<script src="./script.js"></script>	
 </body>
 
 </html>
