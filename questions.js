@@ -1,7 +1,8 @@
 $( document ).ready( function() {
 
-  console.log("Timer!!");
-
+/* =============================================================================== */
+/* Timer Functions:                                                                */
+/* =============================================================================== */
   var timer;
   function renderTime ( setSeconds, /*boolMinutes, setMinutes*/ ) {
     $( "#seconds" ).text( setSeconds );
@@ -32,15 +33,12 @@ $( document ).ready( function() {
       
     } );
   }
+/* =============================================================================== */
 
 
-
-/* ------------------------------------------------------ */
-
-
-
-  console.log("QA TRIVIA!!");
-
+/* =============================================================================== */
+/* Questions and Answers Functions:                                                */
+/* =============================================================================== */
   let arrayQuestionsAnswers = [];
   const MAX_QUESTIONS       = 15;
   let questionPosition; // Current Question Position
@@ -51,14 +49,10 @@ $( document ).ready( function() {
   ).then( response => {
     return response.json();
   }).then ( triviaQ_A => {
-    console.log( "newQuestions.results = ", triviaQ_A.results );
     arrayQuestionsAnswers = triviaQ_A.results;
-    console.log( "arrayQuestionsAnswers = ", arrayQuestionsAnswers );
   });
 
   function startGame() {
-    console.log("The game has started!!");
-
     questionPosition = 0; // Set Current Question Position
     counterScore     = 0; // Set Counter Score 
 
@@ -87,11 +81,12 @@ $( document ).ready( function() {
     }
     questionPosition++;
   }
+/* =============================================================================== */
 
-/* ------------------------------------------------------ */
 
-console.log( "GEO TRIVIA" );
-
+/* =============================================================================== */
+/* Display Card Functions:                                                         */
+/* =============================================================================== */
 //Object with ALL Ccorrect Answers:
 var triviaCorrectAnswers = {
   [ "Sudbury, Ontario" ]               : { geoCode: "CAN",              index: "86"}, // name
@@ -319,34 +314,16 @@ function getNameOfCountry ( mObj_index, rAjax ) {
 function formatNumber(num) {
   return num.toString().replace( /(\d)(?=(\d{3})+(?!\d))/g, '$1,' )
 }
+/* =============================================================================== */
 
 
-
-
-
-
-
-
-
-
-
-/* ------------------------------------------------------ */
-
-
-
-
-
-
-
-
-  
-
+/* =============================================================================== */
+/* Main Functions:                                                                 */
+/* =============================================================================== */
   function createNewQuestionAndAnswers() {
-    // console.log("Start Game Image Clicked!!");
     $( "#quiz" ).empty();
     $( "#einstein-next-question-button" ).empty();
 
-    console.log("Here we are going to put all questions one by one...and the next button!!");
     let tagDiv = $( "<div>" ).attr( "class", "buttons" );
     let tagButton1 = $( "<button>" ).attr( "id", "btn0" ).attr( "class", "choice-text" ).attr( "data-number", "0" );
     let tagButton2 = $( "<button>" ).attr( "id", "btn1" ).attr( "class", "choice-text" ).attr( "data-number", "1" );
