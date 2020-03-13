@@ -12,16 +12,19 @@
 	height:338px;
 	background:transparent;
 	position:absolute;
-	left:0;
-	right:0;
+	right:590px;
 	margin:auto;
-	top:0;
-	bottom:0;
-	border-radius:10px;
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	box-shadow: 0px 20px 30px 3px rgba(6, 114, 93, 0.55);
+	/* border-radius:10px; */
+	border: none;
+	/* -webkit-border-radius:10px;
+	-moz-border-radius:10px; */
+	/* box-shadow: 0px 20px 30px 3px rgba(6, 114, 93, 0.55); */
 }
+@media (max-width: 1090px) {
+    .card {
+		right:110px;
+    }
+  }
 
 .card_left {
 	width:45%;
@@ -29,10 +32,10 @@
 	float:left;
 	overflow:hidden;
 	background:#D3DBD6;
-	border-radius:10px 0 0 10px;
+	/* border-radius:10px 0 0 10px; */
 	align-items: center;
-	-webkit-border-radius:10px 0 0 10px;
-	-moz-border-radius:10px 0 0 10px;
+	/* -webkit-border-radius:10px 0 0 10px;
+	-moz-border-radius:10px 0 0 10px; */
 }
 .card_left img {
 	width: 100%;
@@ -47,9 +50,9 @@
 	float:left;
 	background:#D3DBD6;
 	height:338px;
-	border-radius:0 10px 10px 0;
+	/* border-radius:0 10px 10px 0;
 	-webkit-border-radius:0 10px 10px 0;
-    -moz-border-radius:0 10px 10px 0;
+    -moz-border-radius:0 10px 10px 0; */
 }
 .card_right h1 {
 	color:#37432B;
@@ -94,14 +97,14 @@
 	padding:0 0 0 40px;
 	margin:30px 0 0 0;
 }
-.card_right__button a {
+.viewmap {
 	color:#FFF;
 	text-decoration:none;
 	font-family: 'Montserrat', sans-serif;
 	border:2px solid #0BE2B8;
 	padding:10px 10px 10px 40px;
 	font-size:12px;
-	background:url(./location-green.png);
+	background:url(./icons/location-green.png);
 	background-size:10px 15px;
 	background-repeat:no-repeat;
 	background-position: 13% 50%;
@@ -112,10 +115,10 @@
 	-webkit-transition-duration: .5s;
 	transition-duration: .5s;
 }
-.card_right__button a:hover {
+.viewmap:hover {
 	color: #000000;
 	background-color: #0BE2B8;
-	background-image:url(./location-yellow.png);
+	background-image:url(./icons/location-yellow.png);
 	background-size:18px 25px;
 	background-repeat:no-repeat;
 	background-position: 10% 50%;

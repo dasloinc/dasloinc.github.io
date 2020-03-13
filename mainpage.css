@@ -1071,7 +1071,7 @@ body {
   font-family:'Yanone Kaffeesatz', sans-serif; */
 }
 
-#topBanner a {
+#a-highscore {
   color:#481380;
 	font-family: "Cabin Sketch", "Roboto Slab", georgia, serif;
 	font-weight:700;
@@ -1083,6 +1083,6 @@ body {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); 
   text-decoration: none;
 }
-#topBanner a:hover {
+#a-highscore:hover {
   color:#7F78D2;
 }
