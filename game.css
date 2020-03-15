@@ -205,3 +205,32 @@ ol {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+
+  #player-score{
+    color:rgb(175, 34, 34);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+
+  }
+
+
+  .container-gameover {
+      width: 800px;
+      /* height: 680px; */
+      height: 320px;
+      max-height: 900px;
+      padding: 10px 20px 10px 50px;
+      margin: 10px 5px;
+      /* margin-top: 10px; */
+      background-color: rgb(212, 219, 214);
+      opacity: 1.0;
+      border: 1px solid rgb(197, 193, 193);
+      border-radius: 10px;
+      /* margin-left: 50px; */
+      color: rgb(134, 134, 129);
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-right: 150px;
+      margin: auto;
