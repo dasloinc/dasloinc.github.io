@@ -72,7 +72,8 @@
 						<div class= "font.header"> 
 						<h2 class="subscreen-title">HIGHSCORE!!</h2>
 					
-						<p> Thank you for taking our quiz! Take a look at how your score stacks against others~! 
+						<p> Thank you for taking our quiz! <br>
+							Take a look at how your score stacks against others! 
 					</div>
 		
 					</li>
@@ -84,25 +85,26 @@
 	</div> 
  <main class="main-content">
 		<div class="fullwidth-block">
-			<div class="container">
-				<div class="row"> 
+			<div class="container-gameover">
+				<!-- <div class="row">  -->
                     
 	
-	<div class="grid">
+	<!-- <div class="grid"> -->
+
 		<div class= "font.header"> 
 		<h2>Recent High Scores </h2>
+	<hr>
+	
+		<ol class="custom-counter" id="highScores"></ol>
 
-		<!-- <ol id="highscores"> 
-			<li> Name : Score </li>  
-			<li> Name : Score</li>  
-		</ol> -->
-
-		<p id='display-current-score'></p>
+	
+		<!-- <p id='display-current-score'></p> -->
 		<script src="./highscore.js"></script>
-		<hr>
+		
 		<button id="einstein-previous-button"><a href="index.html">
 			<img src="./images/einstein-previousbutton.png" width="50" height="50" alt="submit">
 		</button></a>
+
 	</div> 
 	<div id="responseArea">
 	</div>	

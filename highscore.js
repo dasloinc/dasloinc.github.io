@@ -2,25 +2,23 @@
 
 var currentUser = JSON.parse(localStorage.getItem( "currentScore" ));
 
-console.log(currentUser.playerName)
-console.log(currentUser.playerScore)
+// console.log(currentUser.playerName)
+// console.log(currentUser.playerScore)
 
-document.getElementById("display-current-score").innerHTML = "Name: " + currentUser.playerName + " ------- score: " + currentUser.playerScore;
+// document.getElementById("display-current-score").innerHTML = "Name: " + currentUser.playerName + "  " + currentUser.playerScore;
 
+//ADD ON
 
-
-
-//==================================== ADD ON =====================================
 var highScoreList = $("#highScores");
 
 //creates the ol list elements to display them
 
 function loadHighScores(){
 
-    let playerScore = JSON.parse(localStorage.getItem("highScores"));
+    let currentScores = JSON.parse(localStorage.getItem("highScores"));
 
-    if (playerScore !== null || currentScores == ""){
-        sortByKeyDesc(playerScore,"playerScore");
+    if (currentScores !== null) {
+        sortByKeyDesc(currentScores,"playerScore");
         currentScores.forEach(element => {
             var newLi = $("<li>")
             .text(element.playerName+": "+element.playerScore);
@@ -30,18 +28,18 @@ function loadHighScores(){
     }else{
         highScoreList.empty();
     }
-}
-function init(){
-    loadHighScores();
-    $("#back").on("click",function(){
-        open("./index.html");
-    });
-
-    $("#clear").on("click", function(){
-        localStorage.removeItem("highScores");
-        loadHighScores();
-
-        console.log(loadHighScores)
-    });
+ 
 }
 
+//sorts an array of objects by the selected key (descending);
+function sortByKeyDesc(array, key) {
+    return array.sort(function(a, b) {
+        let x = a[key];
+        let y = b[key];        
+        return ((x > y) ? -1 : ((x < y) ? 1 : 0));
+    });
+}
+loadHighScores();
+
+
+// localStorage.removeItem("highScores");

@@ -102,7 +102,7 @@
   clear-button {
     background-color: rgb(212, 219, 214);
     display: block;
-    margin-left:0;
+    margin-left:50px;
     width:75px;
     opacity:0.75;
 
@@ -206,21 +206,20 @@ ol {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-
   #player-score{
     color:rgb(175, 34, 34);
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     text-decoration: underline;
+    font-weight: bold;
 
   }
 
-
   .container-gameover {
-      width: 800px;
+      width: 700px;
       /* height: 680px; */
       height: 320px;
-      max-height: 900px;
+      max-height: 1000px;
       padding: 10px 20px 10px 50px;
       margin: 10px 5px;
       /* margin-top: 10px; */
@@ -234,3 +233,25 @@ ol {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       margin-right: 150px;
       margin: auto;
+
+      
+      ol {
+        list-style: none;
+        counter-reset: item;
+      }
+      li {
+        counter-increment: item;
+        margin-bottom: 5px;
+      }
+      li:before {
+        margin-right: 10px;
+        content: counter(item);
+        background: lightblue;
+        border-radius: 100%;
+        color: white;
+        width: 1.2em;
+        text-align: center;
+        display: inline-block;
+      }
+
+      }
