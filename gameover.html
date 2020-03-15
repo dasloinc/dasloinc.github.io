@@ -33,6 +33,11 @@
      ================================================== -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+
+	<!-- Javascript ================================================== -->
+	<script src="./gameover.js"></script>
+
+
 </head>
 
 <body>
@@ -63,7 +68,7 @@
 						<li>
 							<div class="subscreen-caption">
 								<h2 class="subscreen-title">That's all folks!! <br>Thanks for playing.</h2>
-								<p> You've completed our quiz with a score of <span id="span-user-score"></span>. <br>Would you like to post this to our highscore list? </p>
+								<p> You've completed our quiz with a score of <span id="highscore"></span>. <br>Would you like to post this to our highscore list? </p>
 							</div>
 							<img src="./images/einstein-learn.png" alt="">
 						</li>
@@ -87,11 +92,12 @@
 						<!-- <p>You've completed our quiz with a score of "". Would you like to post this to our highscore list?</p> -->
 
 						<!-- set form action to high score page below -->
-				<form>
-							<input type="text" id="fname" value="Enter Name Here:">
-							<input type="image" id="einstein-gameover" alt="Submit Highscore" src="./images/einstein-champion.png"  width="80" height="80" value="Submit Highscore">
 
-				</form>
+					<form id="highscore" action='./highscore.html' onsubmit="return displayScore(this);">
+						<input type="text" id="fname" value="">
+						<input type="submit" alt="Submit Highscore">
+					</form>
+
 							<!-- <input type="submit" value="Submit to Highscore">   -->
 							<!-- <button id="loadhighscore">Submit to Highscore</button> -->
 							<!-- <input type="image" id="einstein-gameover" alt="Submit Highscore" src="./images/einstein-champion.png" value="Submit Highscore">
@@ -196,9 +202,9 @@
 	</footer>
 
 
-<!-- Javascript ================================================== -->
-<script src="./gameover.js"></script>
-		
+
+
+
 </body>
 
 </html>

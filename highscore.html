@@ -36,8 +36,6 @@
      ================================================== -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-
-
 </head>
 
 <body>
@@ -74,7 +72,7 @@
 						<div class= "font.header"> 
 						<h2 class="subscreen-title">HIGHSCORE!!</h2>
 					
-						<p> Thank you for taking our quiz! Take a look at how your score stacks against others~! :) </p>
+						<p> Thank you for taking our quiz! Take a look at how your score stacks against others~! 
 					</div>
 		
 					</li>
@@ -89,37 +87,36 @@
 			<div class="container">
 				<div class="row"> 
                     
-	<!-- =============================  SMAK ADD ON HERE ================================================================================-->
-	   
+	
 	<div class="grid">
 		<div class= "font.header"> 
 		<h2>Recent High Scores </h2>
 
-		<ol id="highscores"> 
+		<!-- <ol id="highscores"> 
 			<li> Name : Score </li>  
 			<li> Name : Score</li>  
-		</ol>
-		
+		</ol> -->
+
+		<p id='display-current-score'></p>
+		<script src="./highscore.js"></script>
 		<hr>
 		<button id="einstein-previous-button"><a href="index.html">
 			<img src="./images/einstein-previousbutton.png" width="50" height="50" alt="submit">
 		</button></a>
 	</div> 
-		
+	<div id="responseArea">
+	</div>	
 					
-	<!-- <button id="clear">Clear High Scores</button> -->	
+
 		
 
 			
 			</div> 
 		</div>
 	</div>
-		<div class="highScores"></div>
-		<script src="./highscore.js"></script>
        
     
-		
-    <!--===================== // SMAK  ENDS HERE ======================================================-->
+	
 
 
 				</div> 
@@ -218,7 +215,6 @@
 		
 	</footer>
 	
-
   
 </body>
 
