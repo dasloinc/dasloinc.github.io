@@ -42,4 +42,4 @@ function sortByKeyDesc(array, key) {
 loadHighScores();
 
 
-// localStorage.removeItem("highScores");
+localStorage.removeItem("highScores");
