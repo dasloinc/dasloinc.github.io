@@ -60,8 +60,6 @@
 ## Author:
 * This app was design by ['ADRS'](Anson-Daniel-Rodrigo-Sophorn)
 
-* URL:
-
 
 ## Credits:
 
