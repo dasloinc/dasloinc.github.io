@@ -59,27 +59,3 @@
 
 ## Author:
 * This app was design by ['ADRS'](Anson-Daniel-Rodrigo-Sophorn)
-
-
-## Credits:
-
-* Images and Maps:
-['Google'](google.com)
-['Google'](google.com/maps)
-		
-* Icons & Fonts:
-['Google'](google.com)
-['Google-Fonts'](fonts.google.com/)
-['Font-Awesome'](fontawesome.io)
-
-* API:
-['API'](opentdb.com/api.php')
-['API'](restcountries.eu/rest/v2)
-
-* Other:
-['jQuery'](jquery.com)
-['GitHub'](github.com/ansonhywong)
-['GitHub'](github.com/dasloinc)
-['GitHub'](github.com/rodrigomgimenes)
-['GitHub'](github.com/smak-13)
-
